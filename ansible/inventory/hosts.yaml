@@ -1,0 +1,7 @@
+all:
+  hosts:
+    darbia_do_web_001:
+      ansible_host: 161.35.185.8
+  vars:
+    ansible_user: bradleyreynolds
+    ansible_ssh_private_key_file: /home/codespace/.ssh/id_ci

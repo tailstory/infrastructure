@@ -1,0 +1,23 @@
+[project]
+name = "infrastructure"
+version = "0.0.0" # explicity non-versioned
+description = "Infrastructure for Tailstory"
+authors = [
+    { name = "Bradley Reynolds", email = "bradley.reynolds@darbia.dev" },
+]
+license = { text = "MIT" }
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "ansible",
+]
+
+[project.urls]
+repository = "https://github.com/tailstory/infrastructure"
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = [] # no python packages
