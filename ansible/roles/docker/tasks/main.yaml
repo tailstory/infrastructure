@@ -7,7 +7,7 @@
   ansible.builtin.apt:
     pkg:
       - ca-certificates
-      - curl    
+      - curl
     state: latest
     update_cache: true
 - name: Add Docker GPG apt Key
