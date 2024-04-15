@@ -1,3 +1,4 @@
+---
 - name: Install aptitude
   ansible.builtin.apt:
     name: aptitude
@@ -5,9 +6,7 @@
     update_cache: true
 - name: Install required system packages
   ansible.builtin.apt:
-    pkg:
-      - ca-certificates
-      - curl
+    pkg: [ca-certificates, curl]
     state: latest
     update_cache: true
 - name: Add Docker GPG apt Key

@@ -1,3 +1,4 @@
+---
 all:
   hosts:
     darbia_do_web_001:

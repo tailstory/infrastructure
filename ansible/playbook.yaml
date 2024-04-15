@@ -1,4 +1,4 @@
+---
 - name: Deploy common services
   hosts: all
-  roles:
-    - docker
+  roles: [docker]
