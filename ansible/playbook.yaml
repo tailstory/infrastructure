@@ -1,9 +1,4 @@
-- name: My first play
+- name: Deploy common services
   hosts: all
-  tasks:
-   - name: Ping my hosts
-     ansible.builtin.ping:
-
-   - name: Print message
-     ansible.builtin.debug:
-      msg: Hello world
+  roles:
+    - docker
