@@ -7,13 +7,20 @@ authors = [
 ]
 license = { text = "MIT" }
 readme = "README.md"
-requires-python = ">=3.12"
+requires-python = ">=3.10"
 dependencies = [
-    "ansible",
 ]
 
 [project.urls]
 repository = "https://github.com/tailstory/infrastructure"
+
+[project.optional-dependencies]
+ansible = [
+    "ansible>=9.4.0",
+]
+lint_ansible = [
+     "ansible-lint>=24.2.2; platform_system != 'Windows'",
+]
 
 [build-system]
 requires = ["setuptools", "wheel"]
