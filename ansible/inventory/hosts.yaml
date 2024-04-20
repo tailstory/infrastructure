@@ -1,5 +1,5 @@
 ---
 all:
   hosts:
-    darbia_do_web_001:
-      ansible_host: 161.35.185.8
+    maddison:
+      ansible_host: maddison.box.tailstory.dev
