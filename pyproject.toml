@@ -1,0 +1,34 @@
+[project]
+name = "infrastructure"
+version = "0.0.0" # explicity non-versioned
+description = "Infrastructure for Tailstory"
+authors = [
+    { name = "Bradley Reynolds", email = "bradley.reynolds@darbia.dev" },
+]
+license = { text = "MIT" }
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+]
+
+[project.urls]
+repository = "https://github.com/tailstory/infrastructure"
+
+[project.optional-dependencies]
+ansible = [
+    "ansible>=9.4.0",
+]
+lint_ansible = [
+     "ansible-lint>=24.2.2; platform_system != 'Windows'",
+]
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = [] # no python packages
+
+# I want this, but it adds random indents which cause syntax errors
+# [tool.yamlfix]
+# explicit_start = false

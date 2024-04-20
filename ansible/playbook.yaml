@@ -1,0 +1,4 @@
+---
+- name: Deploy common services
+  hosts: all
+  roles: [common, docker]
