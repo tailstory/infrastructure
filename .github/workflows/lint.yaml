@@ -6,4 +6,4 @@ on:
   pull_request:
 jobs:
   pre-commit:
-    uses: darbiadev/.github/.github/workflows/generic-precommit.yaml@29197a38ef3741064f47b623ede0c1ad22402c57  # v13.0.3
+    uses: darbiadev/.github/.github/workflows/generic-precommit.yaml@35ec51819cd4cbfe7f93d24e3307ef24753a681a  # v13.0.4
