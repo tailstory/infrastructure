@@ -2,7 +2,7 @@
 _dmarc:
   type: TXT
   values:
-    - v=DMARC1\;p=reject\;sp=reject\;adkim=s\;aspf=s\;fo=0:1:d:s\;rua=mailto:c6859eec3d414dd28f215b0ce02a42e7@dmarc-reports.cloudflare.net,mailto:dmarc@tailstory.dev\;ruf=mailto:dmarc@tailstory.dev
+    - v=DMARC1\;p=reject\;adkim=s\;aspf=s\;rua=mailto:c6859eec3d414dd28f215b0ce02a42e7@dmarc-reports.cloudflare.net,mailto:dmarc@tailstory.dev
 
 _smtp._tls:
   type: TXT
