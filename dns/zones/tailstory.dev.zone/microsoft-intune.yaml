@@ -1,0 +1,8 @@
+---
+enterpriseenrollment:
+  type: CNAME
+  value: enterpriseenrollment-s.manage.microsoft.com.
+
+enterpriseregistration:
+  type: CNAME
+  value: enterpriseregistration.windows.net.
