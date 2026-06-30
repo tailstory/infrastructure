@@ -1,0 +1,9 @@
+---
+docs:
+  octodns:
+    cloudflare:
+      auto-ttl: true
+      comment: GitHub Pages root site
+      proxied: true
+  type: CNAME
+  value: tailstory.github.io.

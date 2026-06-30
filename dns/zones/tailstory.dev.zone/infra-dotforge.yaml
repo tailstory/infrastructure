@@ -1,0 +1,8 @@
+---
+dotforge:
+  octodns:
+    cloudflare:
+      auto-ttl: true
+      proxied: true
+  type: AAAA
+  value: "100::"

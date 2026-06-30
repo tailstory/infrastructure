@@ -1,0 +1,27 @@
+---
+"":
+  - type: TXT
+    values:
+      - v=spf1 include:spf.protection.outlook.com -all
+
+  - type: MX
+    values:
+      - exchange: tailstory-dev.e-v1.mx.microsoft.
+        preference: 10
+
+  - octodns:
+      cloudflare:
+        auto-ttl: true
+        comment: Root site
+        proxied: true
+    type: ALIAS
+    value: tailstory.github.io.
+
+www:
+  octodns:
+      cloudflare:
+        auto-ttl: true
+        comment: WWW redirect for root site
+        proxied: true
+  type: CNAME
+  value: tailstory.dev.

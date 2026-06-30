@@ -1,0 +1,22 @@
+---
+_dmarc:
+  type: TXT
+  values:
+    - v=DMARC1\;p=reject\;sp=reject\;adkim=s\;aspf=s\;fo=0:1:d:s\;rua=mailto:c6859eec3d414dd28f215b0ce02a42e7@dmarc-reports.cloudflare.net,mailto:dmarc@tailstory.dev\;ruf=mailto:dmarc@tailstory.dev
+
+_smtp._tls:
+  type: TXT
+  values:
+    - v=TLSRPTv1\;rua=mailto:tls-rpt@tailstory.dev
+
+autodiscover:
+  type: CNAME
+  value: autodiscover.outlook.com.
+
+selector1._domainkey:
+  type: CNAME
+  value: selector1-tailstory-dev._domainkey.tailstory.y-v1.dkim.mail.microsoft.
+
+selector2._domainkey:
+  type: CNAME
+  value: selector2-tailstory-dev._domainkey.tailstory.y-v1.dkim.mail.microsoft.
