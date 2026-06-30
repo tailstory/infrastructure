@@ -3,7 +3,7 @@ name: Deploy DNS to providers
 on:
   push:
     branches: [main]
-    paths: [dns/production.yaml, dns/zones/external/**]
+    paths: [dns/production.yaml, dns/zones/**]
 permissions:
   contents: read
 jobs:
