@@ -1,9 +1,9 @@
 [dependency-groups]
 dev = [
-    "prek>=0.4.5",
+    "prek>=0.4.11",
 ]
 dns = [
-    "octodns>=1.19.0",
+    "octodns>=1.21.0",
     "octodns-cloudflare>=1.2.0",
 ]
 
