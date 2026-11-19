@@ -8,6 +8,3 @@
     values:
       - exchange: tailstory-dev.e-v1.mx.microsoft.
         preference: 10
-
-# The root and www are custom domains on the site's Worker, so Cloudflare owns
-# their records and the ignore-cf-placeholders processor keeps them out of here.
