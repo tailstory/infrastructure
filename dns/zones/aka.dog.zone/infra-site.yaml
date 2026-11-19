@@ -19,9 +19,6 @@
       - flags: 0
         tag: issue
         value: ssl.com
-      - flags: 0
-        tag: issuewild
-        value: ;
 
 _dmarc:
   type: TXT
