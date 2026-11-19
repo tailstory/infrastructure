@@ -1,15 +1,7 @@
 ---
 "":
-  - type: TXT
-    value: v=spf1 -all
-
-  - octodns:
-      cloudflare:
-        auto-ttl: true
-        comment: Site
-        proxied: true
-    type: AAAA
-    value: "100::"
+  type: TXT
+  value: v=spf1 -all
 
 _dmarc:
   type: TXT

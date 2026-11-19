@@ -18,6 +18,9 @@ providers:
     pagerules: false
 
 processors:
+  # Cloudflare creates and owns an AAAA 100:: record for every Workers custom domain.
+  # Rejecting 100:: on both sides keeps them out of the zone files and stops octodns
+  # from deleting them, so they are never written here.
   ignore-cf-placeholders:
     class: octodns.processor.filter.NetworkValueRejectlistFilter
     rejectlist:
