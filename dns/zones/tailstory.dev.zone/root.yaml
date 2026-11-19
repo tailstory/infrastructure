@@ -8,18 +8,3 @@
     values:
       - exchange: tailstory-dev.e-v1.mx.microsoft.
         preference: 10
-
-  - octodns:
-      cloudflare:
-        auto-ttl: true
-        comment: Root site
-        proxied: true
-    type: ALIAS
-    value: tailstory.github.io.
-
-www:
-  octodns:
-    cloudflare:
-      comment: GitHub Pages redirects www to the root site
-  type: CNAME
-  value: tailstory.github.io.

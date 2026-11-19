@@ -1,7 +1,24 @@
 ---
 "":
-  type: TXT
-  value: v=spf1 -all
+  - type: TXT
+    value: v=spf1 -all
+
+  - type: MX
+    value:
+      exchange: .
+      preference: 0
+
+  - type: CAA
+    values:
+      - flags: 0
+        tag: issue
+        value: letsencrypt.org
+      - flags: 0
+        tag: issue
+        value: pki.goog
+      - flags: 0
+        tag: issue
+        value: ssl.com
 
 _dmarc:
   type: TXT
