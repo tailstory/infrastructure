@@ -8,3 +8,12 @@
     values:
       - exchange: tailstory-dev.e-v1.mx.microsoft.
         preference: 10
+
+www:
+  octodns:
+    cloudflare:
+      auto-ttl: true
+      comment: Placeholder for the www redirect rule
+      proxied: true
+  type: A
+  value: 192.0.2.1
