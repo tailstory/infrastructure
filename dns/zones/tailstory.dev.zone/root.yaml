@@ -19,9 +19,7 @@
 
 www:
   octodns:
-      cloudflare:
-        auto-ttl: true
-        comment: WWW redirect for root site
-        proxied: true
+    cloudflare:
+      comment: GitHub Pages redirects www to the root site
   type: CNAME
-  value: tailstory.dev.
+  value: tailstory.github.io.
